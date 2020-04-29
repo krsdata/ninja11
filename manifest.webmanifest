@@ -1,0 +1,22 @@
+{
+  "short_name": "Ninja",
+  "name": "Ninja: Fantsy App",
+  "description": "Forecast information",
+  "icons": [
+    {
+      "src": "http://localhost/ninja11/assets/img/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "http://localhost/ninja11/assets/img/icon512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "http://localhost/ninja11/?source=pwa",
+  "background_color": "#3367D6",
+  "scope":"http://localhost/ninja11/",
+  "display": "standalone",
+  "theme_color": "#3367D6"
+}
