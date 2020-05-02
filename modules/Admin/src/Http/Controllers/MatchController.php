@@ -72,8 +72,8 @@ class MatchController extends Controller {
 
                     $email_content = [ //
                         'receipent_email'=> $item->email,
-                        'subject'=> 'Sportsfight | Prize',
-                        'greeting'=> 'SportsFight',
+                        'subject'=> 'ninja11 | Prize',
+                        'greeting'=> 'ninja11',
                         'first_name'=> ucfirst($item->name),
                         'content' => 'You have won the prize of Rs.<b>'.$item->prize_amount.'</b> for the <b>'.$match->title.'</b> match.',
                         'rank' => $item->rank

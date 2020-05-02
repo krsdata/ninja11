@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:updated_time" content="1440432930" />
 <!-- disable auto telephone linking in iOS -->
-<title>SPORTS FIGHT</title>
+<title>  ninja11</title>
 <style type="text/css">
 /* RESET STYLES */
 
@@ -654,7 +654,7 @@ td[class="buttonContent"] a {
                                   <td valign="top" class="textContent"><div align="center"><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-top: 5px; padding-bottom: 5px;">
   <tbody>
     <tr>
-      <td align="center" style="font-family:calibri, Lucida Grande; font-size:13px; color:#666666;"><a href="{{url('/')}}" style="text-decoration:none;color: #666;">SportsFight Fantasy Pvt. Ltd.</a></td>
+      <td align="center" style="font-family:calibri, Lucida Grande; font-size:13px; color:#666666;"><a href="{{url('/')}}" style="text-decoration:none;color: #666;">ninja11 Fantasy Pvt. Ltd.</a></td>
  
     </tr>
 	 

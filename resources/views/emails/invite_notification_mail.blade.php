@@ -1,7 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>SPORTSFIGHT Join Invitation</title>
+<title>ninja11 Join Invitation</title>
 <style type="text/css">
  
 table {
@@ -17,7 +17,7 @@ table {
   <tr>
      
       <td align="center" valign="middle" bgcolor="" style="background-color: #dc3545;padding: 20px;color: #332c41;font-size: 28px;font-family: fantasy;color: #fff;">
-      <div style="font-size: 24px">SPORTS FIGHT</div>
+      <div style="font-size: 24px">ninja11</div>
     </td>
   </tr>
 </table>
@@ -31,11 +31,11 @@ table {
     padding: 20px;">
                       <p><b>{{ucfirst($content['receipent_name'])}}</b></p>
 
-                      <p> {{ ucwords($content['invite_by'])}} has invited you to join a SportsFight. <a href="{!! $content['download_link']!!}">Click here to join</a>!</p>
+                      <p> {{ ucwords($content['invite_by'])}} has invited you to join a ninja11. <a href="{!! $content['download_link']!!}">Click here to join</a>!</p>
                       <div>Use Referal Code : <b>{{$content['referal_code']??'SP2020'}} <b></div>
                       <p>Enjoy! <p> 
                         <p>Regards</p>
-                      <p><b>Team, <br> Sports Fight</b></p>
+                      <p><b>Team, <br> ninja11</b></p>
                   </div>
                 </td>
               </tr>

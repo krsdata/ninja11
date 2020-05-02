@@ -132,10 +132,10 @@ class Helper {
             $mail->Username   = getenv('MAIL_USERNAME'); // SMTP account username
             $mail->Password   = getenv('MAIL_PASSWORD');
 
-            $mail->setFrom('prize@sportsfight.com', "SportsFight");
+            $mail->setFrom('prize@ninja11.in', "ninja11");
             $mail->Subject = $email_content['subject'];
             $mail->MsgHTML($html);
-            $mail->addAddress($email_content['receipent_email'], "SportsFight");
+            $mail->addAddress($email_content['receipent_email'], "ninja11");
 
             //$mail->addAttachment(‘/home/kundan/Desktop/abc.doc’, ‘abc.doc’); // Optional name
             $mail->SMTPOptions= array(
@@ -211,9 +211,8 @@ class Helper {
         return  Mail::send('emails.'.$template, array('content' => $email_content), function($message) use($email_content)
           {
             $name = $_SERVER['SERVER_NAME'];
-            $message->from('no-reply@sportsfight.in','SportsFight');
+            $message->from('no-reply@ninja11.in','ninja11');
             $message->to($email_content['receipent_email'])->subject($email_content['subject']);
-            
           });
     }
 
