@@ -56,39 +56,53 @@
         <div class="card">
             <div class="card-header">
                 <h3>Sign In</h3>
-                
+                @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    @if(isset($message))
+                        <div class="alert alert-success">{{$message}} </div>
+                    @endif
+                    @if(isset($message_failed))
+                        <div class="alert alert-danger">{{$message_failed}} </div>
+                    @endif
             </div>
             <div class="card-body">
-                <form>
+               {!! Form::model($user, ['route' => ['login'],'class'=>'form-horizontal user-form','id'=>'user-form','enctype'=>'multipart/form-data']) !!}
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="username">
+                        <input type="text" name="email" class="form-control" placeholder="Email">
                         
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
-                        <input type="password" class="form-control" placeholder="password">
+                        <input type="password" name="password" class="form-control" placeholder="password">
                     </div>
                     <div class="row align-items-center remember">
                         <input type="checkbox">Remember Me
                     </div>
                     <div class="form-group" style="margin-top:15px">
-                        <a href="{{url('home')}}">
-                        <input type="" value="Login" class="btn float-right login_btn">
-                        </a>
+                         
+                        <input type="submit" value="Login" class="btn float-right login_btn">
+                         
                     </div>
-                </form>
+                 {!! Form::close() !!}  
             </div>
             <div class="card-footer">
                 <div class="d-flex justify-content-center links">
-                    Don't have an account?<a href="register.html">Register</a>
+                    Don't have an account?<a href="{{url('register')}}">Register</a>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <a href="forget.html">Forgot your password?</a>
+                    <a href="forget">Forgot your password?</a>
                 </div>
             </div>
         </div>

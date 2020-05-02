@@ -3,22 +3,8 @@
 
 
     <div class="app-container">
-		<div class="main-header">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4 pro-pic">
-						<img src="{{ url('assets/img/avtar.png') }}" alt="Ninjas11">
-					</div>
-					<div class="col-sm-4 text-center">
-						<h4>Wallet</h4>
-					</div>
-					<div class="col-sm-4">
-						<a href="{{url('wallet')}}"><i class="fas fa-wallet"></i></a>
-					</div>
-				</div>
-			</div>
-			
-		</div>
+		 
+		 @include('partial.navigation')
 		
 		<div class="content" style="padding-top:70px;">
 			

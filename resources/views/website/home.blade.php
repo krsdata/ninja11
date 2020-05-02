@@ -3,22 +3,8 @@
 
 
     <div class="app-container">
-		<div class="main-header">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4 pro-pic">
-						<img src="{{ url('assets/img/avtar.png') }}" alt="Ninjas11">
-					</div>
-					<div class="col-sm-4 text-center">
-						<h4>Ninjas11</h4>
-					</div>
-					<div class="col-sm-4">
-						<a href="{{url('wallet')}}"><i class="fas fa-wallet"></i></a>
-					</div>
-				</div>
-			</div>
-			
-		</div>
+		
+		@include('partial.navigation')
 		
 		<div class="content" style="padding-top:70px;">
 			<div class="container">
@@ -35,7 +21,7 @@
 					<div class="col-sm-12">
 						<div class="matches-container">
 							<div class="full-match-card-container">
-								<a class="match-card-content-container" href="{{url('contest')}}">
+								<a class="match-card-content-container" href="{{url('contest')}}?match_id={{$match->match_id}}">
 									<div class="match-card-header">{{$match->title}}</div>
 									<div class="match-card-primary-container">
 									<div class="squad-container">
@@ -89,7 +75,11 @@
 									<div class="squad-info" style="position: absolute;right: 0px;">
 									<div class="squad-name reaction-placeholder">{{$match->teamb->short_name}}</div>
 									</div></div></div>
-									<div class="match-card-footer">Match Starts in 12 hours</div>
+									<div class="match-card-footer" id="timer_{{$match->match_id}}"> 
+										<script type="text/javascript">
+											getTimer('timer_{{$match->match_id}}', "{{$match->date_start}}");
+										</script>
+									</div>
 								</a>
 							</div>
 						</div>

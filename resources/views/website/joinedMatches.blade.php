@@ -3,25 +3,8 @@
 
 
     <div class="app-container">
-		<div class="main-header">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4 pro-pic">
-						<a href="{{url('home')}}"><i class="fas fa-chevron-left"></i></a>
-					</div>
-					<div class="col-sm-4 text-center">
-						<h4>Joined</h4>
-					</div>
-					<div class="col-sm-4">
-						<a href="{{url('wallet')}}"><i class="fas fa-wallet"></i></a>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-		
-		
-		
+		 
+		 @include('partial.navigation')
 		<div class="content" style="padding-top:54px;">
 			
 			<div class="container">
